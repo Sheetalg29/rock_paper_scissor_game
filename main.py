@@ -1,7 +1,17 @@
+import random as r
+
 def user():
     print("check")
 def computer():
-    print("check")
+    cmp_choice = r.randint(1,3)
+    print(f"{cmp_choice}")
+    if cmp_choice == 1:
+        cmp_name = "rock"
+    elif cmp_choice == 2:
+        cmp_name = "paper"
+    else:
+        cmp_name = "scissor"
+    print(f"computer choice is {cmp_name}\n{cmp_name} vs {c_name}")        
 
 print("****ROCK PAPER SCISSOR GAME***")
 print("Rules of Game:\n1. Rock vs Paper -> Paper wins\n2. Rock vs Scissor -> Rock wins\n3. Paper vs Scissor -> Scissor wins")
