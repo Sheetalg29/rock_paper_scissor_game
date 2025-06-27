@@ -1,7 +1,29 @@
 import random as r
 
 def user():
-    print("check")
+    u2_choice = int(input("Enter choice for user 2:"))
+    print(f"{u2_choice}")
+    if u2_choice == 1:
+        u2_name = "rock"
+    elif u2_choice == 2:
+        u2_name = "paper"
+    else:
+        u2_name = "scissor"
+    print(f"user 2 choice is {u2_name}\n{u2_name} vs {c_name}")
+    if choice == u2_choice:
+        result = "DRAW"
+    elif (choice == 1 and u2_choice == 2) or (u2_choice == 1 and choice == 2):
+        result = 'Paper'
+    elif (choice == 1 and u2_choice == 3) or (u2_choice == 1 and choice == 3):
+        result = 'Rock'
+    elif (choice == 2 and u2_choice == 3) or (u2_choice == 2 and choice == 3):
+        result = 'Scissors'
+    if result == "DRAW":
+        print("<== It's a tie! ==>")
+    elif result == c_name:
+        print("<== User wins! ==>")
+    else:
+        print("<== User 2 wins! ==>") 
 def computer():
     cmp_choice = r.randint(1,3)
     print(f"{cmp_choice}")
@@ -48,7 +70,11 @@ while True:
     while opp>2 or opp<1:
         opp = int(input("Enter your choice again:"))
     if opp == 1:
-        user()     
+        user()
+        print("Do you want to play again?(Y/N)")
+        ans = input().lower()
+        if ans == "n":
+            break     
     else:
         computer()
         print("Do you want to play again?(Y/N)")
