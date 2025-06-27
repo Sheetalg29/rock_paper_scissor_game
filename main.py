@@ -20,8 +20,12 @@ def computer():
         result = 'Rock'
     elif (choice == 2 and cmp_choice == 3) or (cmp_choice == 2 and choice == 3):
         result = 'Scissors'
-    print(f"{result}")
-    #break            
+    if result == "DRAW":
+        print("<== It's a tie! ==>")
+    elif result == choice_name:
+        print("<== User wins! ==>")
+    else:
+        print("<== Computer wins! ==>")          
 
 print("****ROCK PAPER SCISSOR GAME***")
 print("Rules of Game:\n1. Rock vs Paper -> Paper wins\n2. Rock vs Scissor -> Rock wins\n3. Paper vs Scissor -> Scissor wins")
@@ -47,3 +51,9 @@ while True:
         user()     
     else:
         computer()
+        print("Do you want to play again?")
+        ans = input().lower()
+        if ans == n:
+            break
+
+print("Thanks for playing!")
