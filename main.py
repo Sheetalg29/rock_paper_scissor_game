@@ -13,4 +13,7 @@ while True:
         break    
     else:
         c_name = "scissor"  
-    print(f"Your choice is {c_name}")                
+    print(f"Your choice is {c_name}")
+    print("Opponents available:\n1. User\n2. Computer")  
+    opp = int(input("Select your opponent Type:"))              
+    
