@@ -1,3 +1,8 @@
+def user():
+    print("check")
+def computer():
+    print("check")
+
 print("****ROCK PAPER SCISSOR GAME***")
 print("Rules of Game:\n1. Rock vs Paper -> Paper wins\n2. Rock vs Scissor -> Rock wins\n3. Paper vs Scissor -> Scissor wins")
 while True:
@@ -15,5 +20,10 @@ while True:
         c_name = "scissor"  
     print(f"Your choice is {c_name}")
     print("Opponents available:\n1. User\n2. Computer")  
-    opp = int(input("Select your opponent Type:"))              
-    
+    opp = int(input("Select your opponent Type:"))
+    while opp>2 or opp<1:
+        opp = int(input("Enter your choice again:"))
+    if opp == 1:
+        user()     
+    else:
+        computer()
