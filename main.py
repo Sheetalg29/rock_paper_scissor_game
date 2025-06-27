@@ -11,7 +11,17 @@ def computer():
         cmp_name = "paper"
     else:
         cmp_name = "scissor"
-    print(f"computer choice is {cmp_name}\n{cmp_name} vs {c_name}")        
+    print(f"computer choice is {cmp_name}\n{cmp_name} vs {c_name}")
+    if choice == cmp_choice:
+        result = "DRAW"
+    elif (choice == 1 and cmp_choice == 2) or (cmp_choice == 1 and choice == 2):
+        result = 'Paper'
+    elif (choice == 1 and cmp_choice == 3) or (cmp_choice == 1 and choice == 3):
+        result = 'Rock'
+    elif (choice == 2 and cmp_choice == 3) or (cmp_choice == 2 and choice == 3):
+        result = 'Scissors'
+    print(f"{result}")
+    #break            
 
 print("****ROCK PAPER SCISSOR GAME***")
 print("Rules of Game:\n1. Rock vs Paper -> Paper wins\n2. Rock vs Scissor -> Rock wins\n3. Paper vs Scissor -> Scissor wins")
