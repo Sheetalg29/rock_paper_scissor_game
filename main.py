@@ -22,7 +22,7 @@ def computer():
         result = 'Scissors'
     if result == "DRAW":
         print("<== It's a tie! ==>")
-    elif result == choice_name:
+    elif result == c_name:
         print("<== User wins! ==>")
     else:
         print("<== Computer wins! ==>")          
@@ -51,9 +51,9 @@ while True:
         user()     
     else:
         computer()
-        print("Do you want to play again?")
+        print("Do you want to play again?(Y/N)")
         ans = input().lower()
-        if ans == n:
+        if ans == "n":
             break
 
 print("Thanks for playing!")
