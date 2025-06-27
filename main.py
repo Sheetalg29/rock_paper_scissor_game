@@ -2,7 +2,6 @@ import random as r
 
 def user():
     u2_choice = int(input("Enter choice for user 2:"))
-    print(f"{u2_choice}")
     if u2_choice == 1:
         u2_name = "rock"
     elif u2_choice == 2:
