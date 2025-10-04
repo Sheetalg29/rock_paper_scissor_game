@@ -34,7 +34,7 @@ A simple terminal-based **Rock Paper Scissor** game developed using Python. The 
 
 ## Author 👨‍💻
 
-**Varun Agarwal**  
+**SHEETAL Agarwal**  
 Computer Science Student  
 Swami Keshvanand Institute of Technology, Jaipur  
 
